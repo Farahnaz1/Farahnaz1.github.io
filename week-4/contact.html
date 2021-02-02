@@ -33,6 +33,7 @@ value="Mr.">
 </div>
 <div>
 <label for="yourmail">Email</label> 
+<!-- required is a boolean attribute, it only needs to be set by its name -->
 <input type="email" id="yourmail" name="youremail" required>
 </div>
 <div>
@@ -44,9 +45,16 @@ value="Mr.">
  <input type="numbers" name="tickets" id="tickets" min="2" max="10"
  step="2"> 
  </div> 
+ <div>
+ <label for="row">Select Row</label> 
+ <select name="row" id="row">
+<option value="front">Front Row</option> 
+<option value="center" selected>Center Row</option> 
+<option value="back">Back Row</option>  
+</select>   
+ </div>
 <button type="submit">Sign me up!</button>
 </form> 
-
 </section>
   </main>
   <!-- *********footer of the page********* -->
