@@ -17,7 +17,7 @@ h2, h3 {
 nav ul{
 list-style: none;
 background-color:brown;
-padding: 8px;
+padding: 10px;
 border: 2px solid black;  
 }
 nav ul a{
@@ -29,7 +29,7 @@ nav ul a{
 nav ul a,
 nav ul a:link,
 nav ul a:visited {
-  background-color: steelblue;
+  background-color: re;
   /* horizontal vertical blur spread color */
   box-shadow: -2px 2px 4px 2px black;
 }
@@ -54,7 +54,7 @@ nav ul a:active {
     
   }
   li:nth-child(odd) {
-    background: steelblue;
+    background: white;
   }
 .farahsketchbook {
   box-shadow: 0px 2px 1px black;
