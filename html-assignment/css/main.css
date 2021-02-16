@@ -29,7 +29,7 @@ nav ul a{
 nav ul a,
 nav ul a:link,
 nav ul a:visited {
-  background-color: re;
+  background-color:cornflowerblue;
   /* horizontal vertical blur spread color */
   box-shadow: -2px 2px 4px 2px black;
 }
