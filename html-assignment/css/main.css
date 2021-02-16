@@ -27,6 +27,10 @@ nav ul a{
   background-color:slategrey;
   border: 1px solid pink;
 }
+nav ul a:hover,
+  nav ul a:focus {
+    text-decoration: underline;
+  }
 /* class name selector */
 #myinterestsandhobbies {
   background-color:wheat;
