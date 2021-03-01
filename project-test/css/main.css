@@ -46,56 +46,56 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-html {
-	font-size: 16px;
+/* ...from here "My CSS Code" will start... */
+body{
+	max-width: 698px;
+	margin: 0 auto;
+}
+header{
+	background:lightgoldenrodyellow;
+  }
+  header h1{
+	margin: 0;
+  }
+a{
+  
+  display: inline-flexbox;
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  /*box-sizing: border-box;*/
+  margin: 0px;
+  font-size: 1.5em;
+  background-color: lightseagreen;
+  color: black;	
+}
+
+.container{
+	width: 600px;
+	border: 6px solid lightseagreen;
+	background-color: lightseagreen;
+	/* Center Container */
+	margin: 0 auto;
+  }
+  img{
+	 width: 400px;
+	 padding: 5px;
+	 float:left;
+	 margin-right: 1rem;
+	 margin-left: 1rem;
+	 margin-bottom: 1rem;
   }
   
-  body {
-	/* !important will overwrite the cascading effect */
-	color: darkslategray !important;
-	font-family: Arial, Helvetica, sans-serif;
-	background-image: url("../images/bg-color.jpg");
-  
-	/* background-repeat: no-repeat; */
-	/* x-axis y-axis */
-	/* background-position: 100px 200px; */
-	/* background-size: cover; */
-	body {
-		background-color: #3a4a58;
-		color: #8c8c8c;
-		font-family: "Open Sans", Arial, Helvetica, sans-serif;
-		font-size: 17px;
-		font-weight: 400;
-		padding: 15px;
-		margin: 0;
-	  }
-	  
-	  .my-container {
-		max-width: 640px;
-		margin-left: auto;
-		margin-right: auto;
-	  }
-	  
-	  .my-main-content { background-color: #ffffff; }
-	  
-	  #my-intro-img {
-		background-image: url(../imges/floral-a-jpg);
-		background-position: center;
-		background-size: cover;
-		min-height: 425px;
-	  }
-	  
-	  .tm-text-white { color: white; }
-	  
-	  .tm-page-header-container { text-align: center; }
-	  
-	  .tm-page-header {
-		display: inline-block;
-		vertical-align: baseline;
-		margin-top: 20px;
-		margin-bottom: 35px;
-		font-size: 2.1rem;
-		font-weight: 400;
-	  }
-	  
+  /* Add some space between the border; */
+  figure{
+	margin: 10px;
+  }
+  /* Give the caption a distinct style. */
+  {
+	font-family: arial, helvetica, sans-serif;
+	padding: 10px;
+	font-weight: bold;
+	background:#111;
+	color: lightseagreen;
+  }
   
