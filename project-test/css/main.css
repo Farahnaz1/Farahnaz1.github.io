@@ -50,52 +50,89 @@ table {
 body{
 	max-width: 698px;
 	margin: 0 auto;
+	background-color: #aad4cf;
 }
-header{
-	background:lightgoldenrodyellow;
+h1, h2, h3 {
+	text-decoration: underline;
+	font-size: 1.5em;
+	color: maroon;
   }
-  header h1{
-	margin: 0;
-  }
-a{
-  
-  display: inline-flexbox;
-  width: 100%;
-  height: 100px;
-  padding: 20px;
-  /*box-sizing: border-box;*/
-  margin: 0px;
-  font-size: 1.5em;
-  background-color: lightseagreen;
-  color: black;	
+.container{
+	max-width: 698px;
+	margin: 0 auto;
+	
 }
+.clearfix::after {
+	content: "";
+	display: table;
+	clear:both;
+}
+.box{
+	width: 25%;
+	height: 100px;
+	float: left;
+}
+.header{
+background-color: lightcyan;
+width: 698px;
+  }
+
+.home{
+  background-color: lightcyan;
+  width: 33%;
+}
+  .ourstory{
+	  background-color:lightcyan;
+	  width: 34%;
+	  }
+.contactus{
+  background-color: lightcyan;
+  width: 33%;
+		  }
+		  a{
+			width: 60%;
+			height: 30px;
+			padding: 10px;
+			margin: 0px;
+			font-size: 1.5em;
+			color: black;	
+		  }			  
 
 .container{
-	width: 600px;
-	border: 6px solid lightseagreen;
-	background-color: lightseagreen;
+	width: 698px;
+	border: 6px solid lightcyan;
+   background-color: lightcyan;
 	/* Center Container */
+	padding: 10px;
 	margin: 0 auto;
+	overflow: scroll;
   }
   img{
-	 width: 400px;
-	 padding: 5px;
+	 width: 450px;
+	 padding: 10px;
 	 float:left;
-	 margin-right: 1rem;
-	 margin-left: 1rem;
-	 margin-bottom: 1rem;
+	 margin-right: 10px;
+	 margin-left: 5px;
+	 margin-top: 5px;
+	 margin-bottom: 5px;
   }
-  
-  /* Add some space between the border; */
-  figure{
-	margin: 10px;
-  }
-  /* Give the caption a distinct style. */
-  {
-	font-family: arial, helvetica, sans-serif;
-	padding: 10px;
-	font-weight: bold;
-	background:#111;
-	color: lightseagreen;
-  }
-  
+  .clearfix::after {
+	content: "";
+	display: table;
+	clear:both;
+}
+ ul{
+list-style-type: circle;   
+  } 
+  /* Container and box experiment; */
+  input {
+	width: 100%;
+  } 
+  textarea {
+	width: 100%;
+	margin:auto;
+  }	
+footer{
+	footer-align:right;
+}		
+			
