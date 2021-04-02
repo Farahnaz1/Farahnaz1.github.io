@@ -197,7 +197,7 @@ footer a:hover{
 /* ---------------------
 Climate Action page CSS 
 ------------------------ */
-}
+
 .card{
 	border: 1px solid #00ADD8;
 	border-radius: 4px;
@@ -288,13 +288,14 @@ Climate Action page CSS
 }
 .news{
 	display: grid;
-	grid-template-columns: repeat(1, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(3, auto);
 	grid-template-areas:
 	"header header"
 	"left right"
 	"left right"
 	;
+	gap:1em;
 }
 .news h2{
 	grid-area: header;
@@ -303,8 +304,21 @@ Climate Action page CSS
  grid-area: left;
 }
 .right:nth-child(1){
-	grid-area: right;
+	grid-area: right1;
 }
 .right2:nth-child(2){
 	grid-area: right2;
+}
+.news .right{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 1em;
+}
+.news .right img{
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+.news .right h3{
+margin-top: 0;
+font-size: 1.5rem;
 }
