@@ -83,6 +83,8 @@ p{
 
 .container{
 	padding: 1rem;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 /* ---HEADER--- */
@@ -115,7 +117,7 @@ p{
 
 .app .btn{
 	padding: 20px;
-	border: 1px solid gray;
+	border: 1px solid grey;
 	border-radius: 4px;
 	text-decoration: none;
 	color: inherit;
