@@ -277,10 +277,12 @@ Climate Action page CSS
 /* ---------------------
 Climate Action page CSS 
 ------------------------ */
+
 @media screen and (min-width: 800px) {
 	.actions-list li {
 		max-width: 20%;
 	}
+}
 .cards{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -293,8 +295,7 @@ Climate Action page CSS
 	grid-template-areas:
 	"header header"
 	"left right"
-	"left right"
-	;
+	"left right";
 	gap:1em;
 }
 .news h2{
