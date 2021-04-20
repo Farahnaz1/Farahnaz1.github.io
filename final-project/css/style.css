@@ -221,7 +221,9 @@ justify-content: center;
 .services-container{
 	display: grid;
 	grid-template-columns: repeat(3, auto);
-	grid-template-rows: repeat(1fr 2fr 2fr);
+	grid-template-rows: repeat(1fr 2fr 1fr);
+	justify-content: center;
+	align-content: center;
 	grid-template-areas:
 	" our-service our-service ourservice"
 	"service-1  service-2"
