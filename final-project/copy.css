@@ -126,6 +126,11 @@ justify-content: center;
  color:#c78c06;
 }
 
+
+
+
+
+
 /* ----------- DESKTOP STYLE --------- */
 
 @media screen and (min-width: 600px) and (max-width: 1200px){
@@ -173,16 +178,22 @@ justify-content: center;
 
 .welcome{
 	position: absolute;
-	top: 150px;
-	left: 110px;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-bottom: 30px;;
+	margin-top: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
     background:#000;
     background: rgba(0, 0, 0, 0.6);
     color:#FFF;
 }
-/* ---Contact with us Button --- */
+
+  
+
+
+
+
+/* -------------Buttons------------- */
+
+/* Contact with us Button */
 .c-btn{
 	padding: 20px;
 	border: 2px solid #c78c06;
@@ -192,47 +203,8 @@ justify-content: center;
 	color: #222;
 	display: inline-block;
 }
-/* ---------- ABOUT US --------- */
-.main-container{
-	display: flex;
-	flex-direction: row;
-    background-color:#ffe6ac;
-    justify-content: center;
-
-}
-.about-img{
-	width: 500px;;
-	padding: 10px;
-	float:left;
-	margin-right: 20px;
-	margin-left: 20px;
-	margin-top: 10px;
-	margin-bottom: 5px;
- }
- .clearfix::after {
-	content: "";
-	display: table;
-	clear:both;
-}
-/* --------OUR SERVICES--------- */
-
-.services-container{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-	grid-template-areas:
-	" our-service our-service ourservice"
-	"service-1  service-2"
-	"service-3 service-4 service-5";
-	gap:2em;
-	background-color: #ffe6ac;
-}
-.services-container .our-service:nth-child(0){
-	grid-column: 1/span 3;
-} 
-
-/* ------ALL SREVICES BUTTONS----- */
-.btn{
+/* -----Digital Plan Button -----*/
+.dp-btn{
 	padding: 20px;
 	border: 2px solid #222;
 	border-radius: 4px;
@@ -240,26 +212,8 @@ justify-content: center;
 	text-decoration: none;
 	color: white;
 	display: block;
-}
-
-/* -------- OUR VISION --------- */
-.vision-banner{
-display: block;
-position: relative;
-	width: 150%;
 
 }
-
-.vision{
-	position: absolute;
-	top: 150px;
-	left: 110px;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-bottom: 30px;;
-    color:#FFF;
-}
-
 /* ----Learn more Button ----- */
 .l-btn{
 	padding: 20px;
@@ -270,9 +224,39 @@ position: relative;
 	color: white;
 	display: inline-block;
 }
+/* ------ALL SREVICES BUTTONS----- */
+.btn{
+	padding: 20px;
+	border: 2px solid #222;
+	border-radius: 4px;
+	background-color: #222;
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+/* ---------- ABOUT US --------- */
+.main-container{
+	display:flex;
+    background-color:#ffe6ac;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
 
-
-
+}
+/* --------OUR SERVICES--------- */
+.services-container{
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas:
+	" our-service our-service"
+	"service-1 service-2"
+	"service-3 service-4 service-5";
+	gap:2em;
+	background-color: #ffe6ac;
+}
+/* -------- OUR VISION --------- */
 
 
 /* ------- TEAM JOHN BOB ------- */
@@ -299,3 +283,4 @@ position: relative;
 	padding: 1rem 1rem 1rem 1rem;
 	color: #c78c06;
 }
+  
