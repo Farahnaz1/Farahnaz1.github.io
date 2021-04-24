@@ -57,7 +57,7 @@ html{
 body{
 	line-height: 1.5;
 }
-/* ----test-------- */
+/* ----HEADIND-------- */
 
 
 h1,h2{
@@ -342,10 +342,15 @@ position: relative;
 	}
 
 	/* ------- FORM ---------- */
+	.form-container{
+	display: block;
+	width: 100%;
+	}
 	
 	/* ---------- TABLE ---------- */
 
 	.table {
+		display: flex;
 		width: 100%;
 	  }
 	
