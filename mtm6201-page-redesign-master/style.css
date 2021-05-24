@@ -46,4 +46,82 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* ----- From This point I will start adding CustomCSS for my Exercise-1 MTM6201-010 -----  */
+/* ----- From This Point Custome CSS For Exercise-1 MTM6201-010 Will Start -----  */
+/* --- First Font Pairing Code For The Page is Given ---*/
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+/* --- NAV BAR: From This Point I Have Changed The Color Of Nav Bar Background Including Home, About, & Contact Buttons Font Color  --- */
+#nav.nav{
+	background-color: burlywood;
+	border: 3px solid burlywood;	
+}
+#nav.nav a.nav-link{
+	color: black;
+}
+/* --- FIRST PARAGRAPH: Now I Will Change The Background Color And Font Styles For The First Paragraph Section Before It Was Indianred Color ---*/
+#home.home{
+	background-color: #e7d4b5;
+}
+#main section.home{
+	font-family:'Arial Narrow Bold', sans-serif;
+	font-size: 1.5rem;
+	text-align: center;
+} 
+.page-title{
+	font-family: 'Reggae One', cursive;
+	padding-bottom: 15px;
+}
+.p{
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* --- SECOND PARAGRAPH: Now I Will Change The Background Color And Font Styles For The First Paragraph Section Before It Was Greenyellow Color ---*/
+#about.about{
+ background-color: #f6e6cb;
+}
+#about.about {
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+  }
+  .section-title{
+	font-family: 'Reggae One', cursive;
+	padding-bottom: 15px;  
+  }
+  .p{
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin-rght: 10px;
+	
+
+}
+/* --- THIRD PARAGRAPH: Now I Will Change The Background Color And Font Styles For The First Paragraph Section Before It Was  Color Rebeccapurple-*/	
+ #main.main{
+	background-color: #f6e6cb;
+  }
+  #contact.contact .contact-form {
+	padding: 30px;
+	background-color: burlywood;
+	width: 600px;
+	margin: 0px auto;
+  }
+  #contact.contact p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5rems;
+	  text-align: center;
+	  padding: 15px;
+	
+  }
+  /* --- MOBILE CSS CODE STARTS FROM HERE ---*/
+  @media (min-width: 600px){
+	#nav.nav{
+   display: block;
+  }
+  
+  /* --- SITE FOOTER: has Placed in the Center Istead of left side to justify with rest of the site contents -*/	
+  footer{
+	  text-align: center;
+	  padding: 10px;
+  }
