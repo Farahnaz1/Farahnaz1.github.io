@@ -109,8 +109,12 @@ table {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.5rem;
 	  text-align: center;
-	  padding: 15px;
-	
+	  padding: 15px;	
+  }
+  /* --- SITE FOOTER: is Placed in the Center Instead of left side to justify with rest of the site contents to create a good and unified look -*/	
+  footer{
+	  text-align: center;
+	  padding: 10px;
   }
   /* --- MOBILE CSS CODE STARTS FROM HERE ---*/
   @media screen (min-width: 600px){
@@ -122,10 +126,4 @@ table {
   }
   @media screen (min-width: 1200px) {
 	  
-  }
-  
-  /* --- SITE FOOTER: is Placed in the Center Instead of left side to justify with rest of the site contents to create a good and unified look -*/	
-  footer{
-	  text-align: center;
-	  padding: 10px;
   }
