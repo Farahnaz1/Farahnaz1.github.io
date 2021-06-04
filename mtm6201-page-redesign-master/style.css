@@ -57,7 +57,8 @@ table {
 /* --- NAV BAR: From This Point I Have Changed The Color Of Nav Bar Background & Border, Including Home, About, & Contact Buttons Font Color  --- */
 #nav.nav{
 	background-color: burlywood;
-	border: 3px solid burlywood;	
+	border: 3px solid burlywood;
+	width: 100%;	
 }
 #nav.nav a.nav-link{
 	color: black;
@@ -100,8 +101,10 @@ table {
 /* --- THIRD seCTION: I have Changed The Background Color and Font Styles For The Third Section Before Its Background Was Rebeccapurple Color---*/	
  #main.main{
 	background-color: #f6e6cb;
+	 
   }
   #contact.contact .contact-form {
+	width: auto;  
 	padding: 30px;
 	background-color: burlywood;
   }
@@ -120,13 +123,24 @@ table {
   @media screen (min-width: 600px){
 	#nav.nav{
    display: flex;
-   text-align: left;
-   width: 100%
+   justify-content: center;
+   width: 100%;
   }
   @media screen (min-width: 750) {
-
+	#nav.nav{
+		#nav.nav{
+			display: flex;
+			text-align: center;
+			width: 100%;	
+	
+	}
   }
   @media screen (min-width: 1200px) {
 	#nav.nav{
+		#nav.nav{
+			display: flex;
+			text-align: center;
+			width: 100%;	
 	
 	}
+	
