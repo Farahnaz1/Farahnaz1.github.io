@@ -95,6 +95,7 @@ p {
 .content{
     display: grid;
 
+
 }
 form{
     padding: 20px;
@@ -121,13 +122,13 @@ form{
 }
 /* ------- Here  I have set CSS for the "Calculate" button in the footer area by adding Pink backgroung and inline-block */
 .btn-2{
-	padding: 20px;
+	padding: 10px;
 	background-color: #ff8480;
 	text-decoration: none;
 	color: white;
 	display: inline-block;
     width: 100px;
-    margin: 15px;
+    margin: 10px;
 
 }
 
