@@ -46,30 +46,98 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* ------- From this Point and Onwards My Custom CSS will Start First I will set rules for Body Arean------- */
-body {
-        background-image: url("../images/bg-image/scooter.svg");
-        background-color: #cccccc;
-       }
-    background-color: white;
-    font-family: arial, sans-serif;
-}
+/* ------- From this Point and Onwards My Custom CSS will Start First I will set rules for The Body Area First------- */
 
+body {
+background-image: url("../images/bg-image/scooter.svg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-color: white;
+background-color: white;
+font-family: arial, Helvetica, sans-serif;
+
+}
+/* ------- Here For All Headings Specific Rules are Set  as Bold, Font weight, paddings, and margin as well------  */
+
+h1, h3, h5 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+}
+h1 {
+    font-size: 3rem;
+    
+}
+h3 {
+    font-size: 1.5rem;
+}
+h6{
+    padding:15px;
+}
 p {
     line-height: 1.4;
-    margin-bottom: 1.8rem;
+    padding: 20px;
+    margin: 5px;
+}
+.logo {
+    display: flex;
+    height: 100px; width: 100px; 
+    padding: 20px;
 }
 
-nav {
-    color: white;
-    background-color: #ccc;
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
 }
-/*-------Footer STYLE AND COLOR------ */
+/* ------- At this point For the  Contact form (Apply Now) in the main Section, Properties are Defined including Box property and shadow radius */
+.content{
+    display: grid;
+
+}
+form{
+    padding: 20px;
+    margin: 10px;;
+}
+/* ---- FOR THE Hours Calculation From IN THE FOOER AREA CSS strarts from this POINT------- */
+.hours-form{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ------- Below I have set CSS for the "Drive with US" button in the main section by adding Green backgroung and inline-block */
+.btn-1{
+	padding: 20px;
+	background-color: #57eeab;
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+    width: 100px;
+    margin: 15px;
+
+}
+/* ------- Here  I have set CSS for the "Calculate" button in the footer area by adding Pink backgroung and inline-block */
+.btn-2{
+	padding: 20px;
+	background-color: #ff8480;
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+    width: 100px;
+    margin: 15px;
+
+}
+
+/*-------Here Footer Back-ground Color And Othere Properties are defined as Per Exercise Requirements ------ */
 footer {
-    background-color: #999;
-    text-align: center;
-}
+    background-color: #fffd8c;
 
+    
+}
+/* ------- Media Queries Are set at this point for Different devices from 800 - 1200 width-------- */
 @media (min-width: 800px) {
     .grid {
         width: 800px;
@@ -78,14 +146,13 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas: 
-            "logo nav nav"
+            "logo logo logo"
             "main main sidebar"
             "footer footer footer"
     }
 
     .logo { grid-area: logo; }
-    nav { grid-area: nav; }
-    main { grid-area: main; }
+    .main { grid-area: main; }
     .sidebar { grid-area: sidebar; }
     footer { grid-area: footer; }
 }
@@ -96,11 +163,11 @@ footer {
         grid-template-rows: repeat(4, 1fr);
         grid-template-areas:
             "logo logo logo"
-            "nav nav nav"
-            "sidebar main main"
+            "main main sidebar"
             "footer footer footer"
     }
 }
+
 
 @media (min-width: 1200px) {
     .grid {
