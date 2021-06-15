@@ -51,7 +51,7 @@ table {
 body {
 background-image: url("../images/bg-image/scooter.svg");
 background-repeat: no-repeat;
-background-attachment: fixed;
+/*background-attachment: fixed;*/
 background-position: center;
 background-color: white;
 background-color: white;
@@ -92,15 +92,17 @@ p {
 	display: table;
 }
 /* ------- At this point For the  Contact form (Apply Now) in the main Section, Properties are Defined including Box property and shadow radius */
-.content{
-    display: grid;
+.contactform{
+    display: block;
+    width: 300px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+
+  }
 
 
-}
-form{
-    padding: 20px;
-    margin: 10px;;
-}
 /* ---- FOR THE Hours Calculation From IN THE FOOER AREA CSS strarts from this POINT------- */
 .hours-form{
   display: flex;
@@ -109,12 +111,14 @@ form{
   padding: 20px;
 }
 
+
 /* ------- Below I have set CSS for the "Drive with US" button in the main section by adding Green backgroung and inline-block */
 .btn-1{
 	padding: 20px;
 	background-color: #57eeab;
 	text-decoration: none;
-	color: white;
+	color: black;
+    font-weight: bold;
 	display: inline-block;
     width: 100px;
     margin: 15px;
@@ -134,9 +138,7 @@ form{
 
 /*-------Here Footer Back-ground Color And Othere Properties are defined as Per Exercise Requirements ------ */
 footer {
-    background-color: #fffd8c;
-
-    
+    background-color: #fffd8c;   
 }
 /* ------- Media Queries Are set at this point for Different devices from 800 - 1200 width-------- */
 @media (min-width: 800px) {
