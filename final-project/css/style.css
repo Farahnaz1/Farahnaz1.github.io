@@ -79,8 +79,11 @@ p{
   
 /* --------- MOBILE STYLE --------- */
 
-@media screen and (min-width: 760px){
-
+@media screen and (min-width: 560px){
+	html {
+		font-size: 16px;
+	}
+}
 /* --------HEADER NAV --------- */
 .logo{
  display:block;
@@ -128,7 +131,7 @@ justify-content: center;
 
 /* ----------- DESKTOP STYLE --------- */
 
-@media screen and (min-width: 760px) and (max-width: 1200px){
+@media screen and (min-width: 760px) {
 	html {
 		font-size: 16px;
 	}
