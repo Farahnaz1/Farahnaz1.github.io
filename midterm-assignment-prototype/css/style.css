@@ -1,10 +1,9 @@
-/*.container {
-    width: 85%;
-    margin: auto;
-}
-footer {
 
-}*/
+
+
+
+
+/* -------- CUSTOM CSS STARTS FROM THIS POINT ---------- */
 html{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
@@ -24,35 +23,15 @@ body{
 
 
 /* ----------- */
- .header-container{
-   background-color: #E8E8A9;
-   padding: 20px;
-   display: grid;
-   grid-template-columns: repeat(2 1fr);
-   grid-template-areas: "logo header";
-   
- } 
- .logo{
-   grid-area: logo;
- }
  
- .header img{
-   grid-area: header;
-      box-shadow: 10px 10px 5px #929199;
-      -moz-box-shadow: 10px 10px 5px #929199;
-      -webkit-box-shadow: 10px 10px 5px #929199;
-      -khtml-box-shadow: 10px 10px 5px #929199;
-      border-radius: 100px;
-}
-
- /* Style the navigation bar */
+ /* ------ STYLES FOR THE NAVIGATION BAR ARE DEFINED AT THIS POINT ------ */
 .navbar {
     width: 100%;
     background-color: #E8E8A9;
     overflow: auto;
   }
   
-  /* Navbar links */
+  /* ----- STYLES FOR THE NAVBAR LINKS ARE DEFINED HERE -------- */
   .navbar a {
     float: left;
     text-align: center;
@@ -64,23 +43,40 @@ body{
     font-size: 17px;
   }
   
-  /* Navbar links on mouse-over */
+  /* ------- STYLES AND EFFECTS FOR THE NAVBAR LINKS ON MOUSE_OVER ARE GIVEN AT THIS POINT ------*/
   .navbar a:hover {
-    background-color: #ADE4F9;
+    background-color: #efa9d3;
   }
   
-  /* Current/active navbar link */
+  /* ------ CODE FOR THE CURRENT/ACTIVE NAVBAR LINK IS GIVEN HERE ------------ */
   .active {
     background-color: #EFB560;
   }
   
-  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  /* --- TO Add responsiveness THIS CODE WILL DISPLAY THE NAVBAR VERTICALLY INSTEAD OF HORIZONTALLY ON SCREENS LESS THAN 500 PIXELS ------ */
   @media screen and (max-width: 500px) {
     .navbar a {
       float: none;
       display: block;
     }
   }
+  .header-container{
+    background-color: #E8E8A9;
+    padding: 20px;
+  
+   
+  
+  }
+  
+  .header img{
+       box-shadow: 10px 10px 5px #929199;
+       -moz-box-shadow: 10px 10px 5px #929199;
+       -webkit-box-shadow: 10px 10px 5px #929199;
+       -khtml-box-shadow: 10px 10px 5px #929199;
+       border-radius: 100px;
+ }
+ 
+
     /* Cards CSS  */
     @media screen and (min-width: 760px) {
 
@@ -90,7 +86,28 @@ body{
       gap: 1em;	
       margin-top: 10px;
     }
+    }.header-container{
+      background-color: #E8E8A9;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(2 1fr);
+      grid-template-areas: "logo header";
+      
+    } 
+    .logo{
+      grid-area: logo;
     }
+    
+    .header img{
+      grid-area: header;
+         box-shadow: 10px 10px 5px #929199;
+         -moz-box-shadow: 10px 10px 5px #929199;
+         -webkit-box-shadow: 10px 10px 5px #929199;
+         -khtml-box-shadow: 10px 10px 5px #929199;
+         border-radius: 100px;
+   }
+   
+
     /* -------------- */
     .card{
       border: 2px solid #E8E8A9;
@@ -114,7 +131,7 @@ body{
       border-radius: 4px;
       display: inline-block;
     }
-    .btn :hover {
+    .btn :hover{
       background-color: #ADE4F9;
     }
     /* -------- */
@@ -126,8 +143,7 @@ body{
       background-color: #E8E8A9;
     }
     /* --------- */
-    .site-footer{
-      
+    .site-footer{ 
       background-color: #E8E8A9;
       padding: 20px;
       font-size: 16px;
@@ -143,3 +159,22 @@ body{
       text-decoration: none;
       align-content: flex-end;
     }
+    /* ----- CODE FOR THE BLINKING ANIMATION IN THE PRODUCTS PAGE MESSAGE IS GIVEN AT THIS AREA  -------- */
+    .blinking{
+      animation:blinkingText 1.2s infinite;
+    }
+     @keyframes blinkingText{
+      0%{     color: red;    }
+      49%{    color: red; }
+      60%{    color: transparent; }
+      99%{    color:transparent;  }
+      100%{   color: red;    }
+   }
+   .blinking{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    background-color: #EFB560;
+    padding: 50px;
+   }
+   
