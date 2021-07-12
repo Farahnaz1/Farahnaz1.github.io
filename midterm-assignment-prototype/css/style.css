@@ -25,18 +25,19 @@ body{
     width: 100%;
     background-color: #E8E8A9;
     overflow: auto;
+  
   }
   
   /* ----- STYLES FOR THE NAVBAR LINKS ARE DEFINED HERE -------- */
   .navbar a {
     float: left;
     text-align: center;
-    padding: 10px;
-    padding-bottom: 10px;
-    margin: 5px;
+    padding: 20px;
+    margin: 10px;
     color: black;
     text-decoration: none;
     font-size: 17px;
+    border-radius: 5px;
   }
   
   /* ------- STYLES AND EFFECTS FOR THE NAVBAR LINKS ON MOUSE_OVER ARE GIVEN AT THIS POINT ------*/
@@ -49,28 +50,16 @@ body{
     background-color: #EFB560;
   }
   
-  /* --- TO Add responsiveness THIS CODE WILL DISPLAY THE NAVBAR VERTICALLY INSTEAD OF HORIZONTALLY ON SCREENS LESS THAN 500 PIXELS ------ */
+  /* --- TO Add RESPONSIVENESS THIS CODE WILL DISPLAY THE NAVBAR VERTICALLY INSTEAD OF HORIZONTALLY ON SCREENS LESS THAN 500 PIXELS ------ */
   @media screen and (max-width: 500px) {
     .navbar a {
       float: none;
       display: block;
     }
   }
-  .header-container{
-    background-color: #E8E8A9;
-    padding: 20px;
-  }
-  
-  .header img{
-       box-shadow: 10px 10px 5px #929199;
-       -moz-box-shadow: 10px 10px 5px #929199;
-       -webkit-box-shadow: 10px 10px 5px #929199;
-       -khtml-box-shadow: 10px 10px 5px #929199;
-       border-radius: 100px;
- }
- 
 
-    /* Cards CSS  */
+
+    /* ------ TO ADD REPOSIVENESS MEDIA QUERY FOR SCREEN SIZE OF 760 PXCSS  AND STYLE CODE FOR CARDS,  LOGO, HEADER, AND HEADER IMAGE IS GIVEN IN THIS SECTION -------- */
     @media screen and (min-width: 760px) {
 
     .cards{
@@ -79,18 +68,20 @@ body{
       gap: 1em;	
       margin-top: 10px;
     }
-    }.header-container{
+  }
+    /* --- LOGO, HEADER AND HEADER IMAGE, STYLES STARTS FROM HERE---- */
+   
+    
+    .header-container{
       background-color: #E8E8A9;
       padding: 20px;
       display: grid;
       grid-template-columns: repeat(2 1fr);
-      grid-template-areas: "logo header";
-      
+      grid-template-areas: "logo header";  
     } 
-    .logo{
+    logo{ 
       grid-area: logo;
     }
-    
     .header img{
       grid-area: header;
          box-shadow: 10px 10px 5px #929199;
@@ -99,9 +90,8 @@ body{
          -khtml-box-shadow: 10px 10px 5px #929199;
          border-radius: 100px;
    }
-   
 
-    /* -------------- */
+    /* ------ CARDS STYLES AND CODE STARTS FROM THIS AREA -------- */
     .card{
       border: 2px solid #E8E8A9;
       border-radius: 4px;
@@ -118,14 +108,15 @@ body{
     }
     .btn{
       text-decoration: none;
-      color: inherit;
-      border: solid 1px grey;
+      background-color: #EFB560;
+      color: black;
       padding: 20px;
       border-radius: 4px;
       display: inline-block;
     }
-    .btn :hover{
-      background-color: #ADE4F9;
+    .cards a:hover{
+      background-color: #efa9d3;
+      color: black;
     }
     /* -------- */
     .card img{
@@ -135,7 +126,23 @@ body{
     p {
       background-color: #E8E8A9;
     }
-    /* --------- WEBSITE FOOTER AND SOCIAL MEDIA ICON STYLE CODE IS DEFINED IN THIS AREA ------- */
+    .img-ice-cream{
+      left: 50%;
+      margin: 50px 0 0 50px;
+    }
+    /* ----- VIdeo------ */
+video {
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  
+}
+.container-flyer .zeen-flyer{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+    /* --------- WEBSITE FOOTER AND SOCIAL MEDIA ICON STYLE CODE IS GIVEN IN THIS AREA ------- */
     .site-footer{ 
       background-color: #E8E8A9;
       padding: 20px;
@@ -235,5 +242,4 @@ input[type=submit] {
     margin-top: 0;
   }
 }
-
 
