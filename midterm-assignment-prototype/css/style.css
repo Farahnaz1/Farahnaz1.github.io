@@ -19,10 +19,6 @@ body{
 	box-sizing: inherit;
 	line-height: inherit;
 }
-
-
-
-/* ----------- */
  
  /* ------ STYLES FOR THE NAVIGATION BAR ARE DEFINED AT THIS POINT ------ */
 .navbar {
@@ -63,9 +59,6 @@ body{
   .header-container{
     background-color: #E8E8A9;
     padding: 20px;
-  
-   
-  
   }
   
   .header img{
@@ -142,7 +135,7 @@ body{
     p {
       background-color: #E8E8A9;
     }
-    /* --------- */
+    /* --------- WEBSITE FOOTER AND SOCIAL MEDIA ICON STYLE CODE IS DEFINED IN THIS AREA ------- */
     .site-footer{ 
       background-color: #E8E8A9;
       padding: 20px;
@@ -159,16 +152,16 @@ body{
       text-decoration: none;
       align-content: flex-end;
     }
-    /* ----- CODE FOR THE BLINKING ANIMATION IN THE PRODUCTS PAGE MESSAGE IS GIVEN AT THIS AREA  -------- */
+    /* ----- CODE FOR THE BLINKING ANIMATION MESSAGE IN THE PRODUCTS PAGE IS GIVEN AT THIS AREA  -------- */
     .blinking{
       animation:blinkingText 1.2s infinite;
     }
      @keyframes blinkingText{
-      0%{     color: red;    }
-      49%{    color: red; }
+      0%{     color: darkred; }
+      49%{    color: darkred; }
       60%{    color: transparent; }
       99%{    color:transparent;  }
-      100%{   color: red;    }
+      100%{   color: darkred;  }
    }
    .blinking{
     text-align: center;
@@ -177,4 +170,70 @@ body{
     background-color: #EFB560;
     padding: 50px;
    }
-   
+
+  /* ============ FOR THE CONTACT PAGE FORM ALL THE CSS CODE IS GIVEN BELOW =============== */
+
+   /* ----- STYLES FOR THE INPUT, SELECT ELEMENTS AND TEXTAREA ARE GIVEN IN THIS SECTION -----*/
+
+ input[type=text], select, textarea{
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+  /* ------ STYLES FOR THE LABEL TO DISPLAY NEXT TO THE INPUT ARE GIVEN IN THIS SECTION ------ */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* ---------  STYLES FOR THE SUBMIT BUTTONS ARE DEFINED IN THIS SECTION ----------- */
+input[type=submit] {
+  background-color: #EFB560;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  float: right;
+}
+
+/* ------- STYLES FOR THE FORM CONTAINER ARE GIVEN IN THIS SECTION ------------ */
+.container-form {
+  border-radius: 5px;
+  background-color: #d5d4d9;
+  padding: 20px;
+}
+
+/* ------ CODE FOR THE FLOATING COLUMN 1 IS GIVEN IN THIS SECTION ----------*/
+.col-1 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-2 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-1, .col-2, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+

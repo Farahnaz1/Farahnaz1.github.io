@@ -27,43 +27,50 @@
   </header> 
       <!------------ FROM THIS POINT CODES FOR MAIN AREA SECTIONS  & IMAGES HAS BEEN DEFINED ------------>  
    <main>
-       <div class="cards">
-               <section class="card">
-                   <img src="./images/our-store-600.jpg" alt="Our-Store">
-                   <div class="info">
-                       <h2>Our Store wide Offers</h2>
-                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laboriosam inventore incidunt quos maiores corrupti, reprehenderit, deleniti minus dolore iure officiis ipsa itaque cupiditate aspernatur alias nobis fuga nulla explicabo quia quo nihil quidem ipsum? Quasi a nobis veniam quia temporibus distinctio magni atque est, beatae in, ipsam nisi fugit nam illum illo hic, earum necessitatibus! Nam ducimus nulla saepe.
-                       </p>
-                       <a href="#" class="btn">Get more</a>
-                      </div>
-                  </section>
-                <section class="card">
-                    <img src="./images/breakfast-600.jpg" alt="Bannana Split">
-                    <div class="info">
-                        <h2>Bannana Split Breakfast</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laboriosam inventore incidunt quos maiores corrupti, reprehenderit, deleniti minus dolore iure officiis ipsa itaque cupiditate aspernatur alias nobis fuga nulla explicabo quia quo nihil quidem ipsum? Quasi a nobis veniam quia temporibus distinctio magni atque est, beatae in, ipsam nisi fugit nam illum illo hic, earum necessitatibus! Nam ducimus nulla saepe.
-                        </p>
-                        <a href="#" class="btn">Read more</a>
-                       </div>
-                   </section>
-                   <section class="card">
-                    <img src="./images/ice-cream-600.jpg" alt="Jumbo Blizzard Cones">
-                    <div class="info">
-                        <h2>Jumbo Blizzarad Cones</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laboriosam inventore incidunt quos maiores corrupti, reprehenderit, deleniti minus dolore iure officiis ipsa itaque cupiditate aspernatur alias nobis fuga nulla explicabo quia quo nihil quidem ipsum? Quasi a nobis veniam quia temporibus distinctio magni atque est, beatae in, ipsam nisi fugit nam illum illo hic, earum necessitatibus! Nam ducimus nulla saepe.
-                        </p>
-                        <a href="#" class="btn">Get ready</a>
-                       </div>
-                   </section>
-        </div> 
-        <div class="container">
-            <section class="ad">
-                <img src="./images/our-store-600.jpg" alt="Our-Store">
-            </section>
-            <section class="video">
-                 <img src="./images/ice-cream-600.jpg" alt="Blizzard">
-            </section>  
-        </div>  
+    <div class="container-form">
+        <form action="action_page.php">
+          <div class="row">
+            <div class="col-1">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-2">
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-2">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <label for="country">Country</label>
+            </div>
+            <div class="col-2">
+              <select id="country" name="country">
+                <option value="australia">Canada</option>
+                <option value="canada">England</option>
+                <option value="usa">USA</option>
+                <option value="usa">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="col-2">
+              <textarea id="subject" name="subject" placeholder="Write your comments or questions here.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
    </main>
     <!-------- IN THE FOOTER DIV AREA COPYRIGHT AND SOCIAL MEDIA ICONS ARE GIVEN  ---------->
         <div class="container">
