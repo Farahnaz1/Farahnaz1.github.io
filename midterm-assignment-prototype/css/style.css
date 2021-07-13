@@ -1,9 +1,53 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
-
-
-
-/* -------- CUSTOM CSS STARTS FROM THIS POINT ---------- */
+/* =========== CUSTOM CSS STARTS FROM THIS POINT =========== */
 html{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
@@ -12,6 +56,24 @@ html{
 body{
 	line-height: 1.5;
 }
+h1,h2,h3{
+	font-weight: bold;
+    /*--top left right bottom--*/
+	margin: 1em 0 0.5em;
+}
+h1{
+	font-size: 3.063rem;
+}
+h2{
+	font-size: 2.375rem;
+}
+h3{
+	font-size: 1.25rem;
+}
+
+p{
+	margin: 1rem 0;
+}
 
 *, 
 *::after,
@@ -19,6 +81,7 @@ body{
 	box-sizing: inherit;
 	line-height: inherit;
 }
+
  
  /* ------ STYLES FOR THE NAVIGATION BAR ARE DEFINED AT THIS POINT ------ */
 .navbar {
@@ -57,8 +120,7 @@ body{
       display: block;
     }
   }
-
-
+  
     /* ------ TO ADD REPOSIVENESS MEDIA QUERY FOR SCREEN SIZE OF 760 PXCSS  AND STYLE CODE FOR CARDS,  LOGO, HEADER, AND HEADER IMAGE IS GIVEN IN THIS SECTION -------- */
     @media screen and (min-width: 760px) {
 
@@ -69,6 +131,11 @@ body{
       margin-top: 10px;
     }
   }
+  .header {
+    display: block;
+    float: left;
+    max-width: 100%;
+  }
     /* --- LOGO, HEADER AND HEADER IMAGE, STYLES STARTS FROM HERE---- */
    
     
@@ -76,7 +143,7 @@ body{
       background-color: #E8E8A9;
       padding: 20px;
       display: grid;
-      grid-template-columns: repeat(2 1fr);
+      grid-template-columns: repeat(3 1fr);
       grid-template-areas: "logo header";  
     } 
     logo{ 
@@ -85,11 +152,9 @@ body{
     .header img{
       grid-area: header;
          box-shadow: 10px 10px 5px #929199;
-         -moz-box-shadow: 10px 10px 5px #929199;
-         -webkit-box-shadow: 10px 10px 5px #929199;
-         -khtml-box-shadow: 10px 10px 5px #929199;
          border-radius: 100px;
    }
+   
 
     /* ------ CARDS STYLES AND CODE STARTS FROM THIS AREA -------- */
     .card{
@@ -130,17 +195,22 @@ body{
       left: 50%;
       margin: 50px 0 0 50px;
     }
-    /* ----- VIdeo------ */
+    /* ----- STYLES CODE FOR THE BLUE PASSION VIDEO, AND ROTATION ANIMATION IS GIVEN BELOW --------- */
 video {
   width: 100%;
   height: auto;
   padding-top: 100px;
   
 }
-.container-flyer .zeen-flyer{
-  width: 100%;
-  align-items: center;
-  justify-content: center;
+.digital-art :hover{
+  animation-duration: 2s;
+  opacity: 1;
+  transition: 10s;
+  transition-timing-function: ease-in-out;
+  transform: scale(1) rotateY(2turn);
+}
+.animation {
+  padding-left: 10px;
 }
     /* --------- WEBSITE FOOTER AND SOCIAL MEDIA ICON STYLE CODE IS GIVEN IN THIS AREA ------- */
     .site-footer{ 
@@ -177,6 +247,17 @@ video {
     background-color: #EFB560;
     padding: 50px;
    }
+   /* ======= STYLES AND CODE FOR THE SPECIAL OFFER PAGE FLYER IS SET AT THIS POINT =========== */
+   .container-flyer img{
+     margin-left: 20px;
+     padding-top: 30px;
+     max-width: 100%;
+   }
+   .container-flyer .zeen-flyer{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
 
   /* ============ FOR THE CONTACT PAGE FORM ALL THE CSS CODE IS GIVEN BELOW =============== */
 
