@@ -1,5 +1,5 @@
 # Portfolio Website 
-## (Final Assignment- Semester 2 Resposiveweb 2)
+## (Final Assignment- Semester 2 Responsiveweb 2)
 
 I have created this website as a part of my academic project. I have tried to do according to my course requirements.
 All the images used in this website are my own, including video clips.
